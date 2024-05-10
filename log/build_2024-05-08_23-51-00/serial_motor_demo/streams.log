@@ -1,0 +1,26 @@
+[0.457s] Invoking command in '/home/ndp/datn/build/serial_motor_demo': AMENT_PREFIX_PATH=/home/ndp/datn/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ndp/datn/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ndp/datn/build/serial_motor_demo/prefix_override:/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages:/home/ndp/datn/install/serial_motor_demo_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ndp/datn/build/serial_motor_demo/build --no-deps symlink_data
+[0.610s] running develop
+[0.687s] running egg_info
+[0.687s] creating serial_motor_demo.egg-info
+[0.687s] writing serial_motor_demo.egg-info/PKG-INFO
+[0.687s] writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt
+[0.687s] writing entry points to serial_motor_demo.egg-info/entry_points.txt
+[0.687s] writing requirements to serial_motor_demo.egg-info/requires.txt
+[0.687s] writing top-level names to serial_motor_demo.egg-info/top_level.txt
+[0.690s] writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[0.712s] reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[0.712s] writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[0.734s] running build_ext
+[0.735s] Creating /home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages/site.py
+[0.736s] Creating /home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages/serial-motor-demo.egg-link (link to .)
+[0.737s] Installing driver script to /home/ndp/datn/install/serial_motor_demo/lib/serial_motor_demo
+[0.737s] Installing gui script to /home/ndp/datn/install/serial_motor_demo/lib/serial_motor_demo
+[0.737s] 
+[0.737s] Installed /home/ndp/datn/build/serial_motor_demo
+[0.737s] running symlink_data
+[0.737s] creating /home/ndp/datn/install/serial_motor_demo/share/ament_index
+[0.737s] creating /home/ndp/datn/install/serial_motor_demo/share/ament_index/resource_index
+[0.737s] creating /home/ndp/datn/install/serial_motor_demo/share/ament_index/resource_index/packages
+[0.737s] symbolically linking /home/ndp/datn/build/serial_motor_demo/resource/serial_motor_demo -> /home/ndp/datn/install/serial_motor_demo/share/ament_index/resource_index/packages
+[0.737s] symbolically linking /home/ndp/datn/build/serial_motor_demo/package.xml -> /home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo
+[0.758s] Invoked command in '/home/ndp/datn/build/serial_motor_demo' returned '0': AMENT_PREFIX_PATH=/home/ndp/datn/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ndp/datn/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ndp/datn/build/serial_motor_demo/prefix_override:/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages:/home/ndp/datn/install/serial_motor_demo_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ndp/datn/build/serial_motor_demo/build --no-deps symlink_data

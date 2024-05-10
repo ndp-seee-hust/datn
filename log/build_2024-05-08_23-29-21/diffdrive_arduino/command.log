@@ -1,0 +1,2 @@
+Invoking command in '/home/ndp/datn/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/diffdrive_arduino
+Invoked command in '/home/ndp/datn/build/diffdrive_arduino' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/diffdrive_arduino

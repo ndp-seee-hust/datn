@@ -1,0 +1,87 @@
+[0.026s] Invoking command in '/home/ndp/datn/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/serial
+[0.088s] -- The C compiler identification is GNU 9.4.0
+[0.166s] -- The CXX compiler identification is GNU 9.4.0
+[0.174s] -- Check for working C compiler: /usr/bin/cc
+[0.250s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.251s] -- Detecting C compiler ABI info
+[0.311s] -- Detecting C compiler ABI info - done
+[0.321s] -- Detecting C compile features
+[0.321s] -- Detecting C compile features - done
+[0.324s] -- Check for working CXX compiler: /usr/bin/c++
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.394s] -- Detecting CXX compiler ABI info
+[0.481s] -- Detecting CXX compiler ABI info - done
+[0.495s] -- Detecting CXX compile features
+[0.495s] -- Detecting CXX compile features - done
+[0.500s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.540s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.540s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.663s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.691s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[0.701s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  
+[0.704s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.706s] -- Looking for pthread.h
+[0.757s] -- Looking for pthread.h - found
+[0.757s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.807s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.807s] -- Check if compiler accepts -pthread
+[0.859s] -- Check if compiler accepts -pthread - yes
+[0.859s] -- Found Threads: TRUE  
+[0.905s] -- Configuring done
+[0.912s] -- Generating done
+[0.913s] -- Build files have been written to: /home/ndp/datn/build/serial
+[0.918s] Invoked command in '/home/ndp/datn/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/serial
+[0.919s] Invoking command in '/home/ndp/datn/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/serial -- -j8 -l8
+[0.946s] [35m[1mScanning dependencies of target serial[0m
+[0.946s] [35m[1mScanning dependencies of target gtest[0m
+[0.946s] [35m[1mScanning dependencies of target gtest_main[0m
+[0.961s] [  7%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[0.961s] [ 14%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[0.961s] [ 21%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[0.974s] [ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.974s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.620s] [ 42%] [32m[1mLinking CXX static library libserial.a[0m
+[1.654s] [ 42%] Built target serial
+[1.664s] [35m[1mScanning dependencies of target serial_example[0m
+[1.675s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o[0m
+[1.900s] [ 57%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[1.931s] [ 57%] Built target gtest_main
+[1.970s] [ 64%] [32m[1mLinking CXX executable serial_example[0m
+[2.043s] [ 64%] Built target serial_example
+[3.420s] [ 71%] [32m[1mLinking CXX static library libgtest.a[0m
+[3.464s] [ 71%] Built target gtest
+[3.475s] [35m[1mScanning dependencies of target serial-test[0m
+[3.475s] [35m[1mScanning dependencies of target serial-test-timer[0m
+[3.487s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o[0m
+[3.487s] [ 85%] [32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o[0m
+[4.080s] [ 92%] [32m[1mLinking CXX executable serial-test-timer[0m
+[4.154s] [100%] [32m[1mLinking CXX executable serial-test[0m
+[4.204s] [100%] Built target serial-test-timer
+[4.264s] [100%] Built target serial-test
+[4.272s] Invoked command in '/home/ndp/datn/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/serial -- -j8 -l8
+[4.295s] Invoking command in '/home/ndp/datn/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/serial
+[4.301s] -- Install configuration: ""
+[4.302s] -- Execute custom install script
+[4.302s] -- Symlinking: /home/ndp/datn/install/serial/lib/libserial.a
+[4.310s] -- Symlinking: /home/ndp/datn/install/serial/include/serial/serial.h
+[4.316s] -- Symlinking: /home/ndp/datn/install/serial/include/serial/v8stdint.h
+[4.322s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/environment/library_path.sh
+[4.328s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/environment/library_path.dsv
+[4.334s] -- Symlinking: /home/ndp/datn/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[4.341s] -- Symlinking: /home/ndp/datn/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[4.347s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/environment/ament_prefix_path.sh
+[4.353s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/environment/ament_prefix_path.dsv
+[4.359s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/environment/path.sh
+[4.365s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/environment/path.dsv
+[4.371s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/local_setup.bash
+[4.377s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/local_setup.sh
+[4.383s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/local_setup.zsh
+[4.389s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/local_setup.dsv
+[4.395s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/package.dsv
+[4.401s] -- Symlinking: /home/ndp/datn/install/serial/share/ament_index/resource_index/packages/serial
+[4.407s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.413s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[4.419s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/cmake/serialConfig.cmake
+[4.425s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/cmake/serialConfig-version.cmake
+[4.431s] -- Symlinking: /home/ndp/datn/install/serial/share/serial/package.xml
+[4.440s] Invoked command in '/home/ndp/datn/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/serial

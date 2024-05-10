@@ -1,0 +1,24 @@
+[0.029s] Invoking command in '/home/ndp/datn/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/diffdrive_arduino
+[0.046s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.078s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.278s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.295s] CMake Error at CMakeLists.txt:15 (find_package):
+[0.295s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[0.295s]   asked CMake to find a package configuration file provided by "serial", but
+[0.295s]   CMake did not find one.
+[0.295s] 
+[0.295s]   Could not find a package configuration file provided by "serial" with any
+[0.295s]   of the following names:
+[0.296s] 
+[0.296s]     serialConfig.cmake
+[0.296s]     serial-config.cmake
+[0.296s] 
+[0.296s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[0.296s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[0.296s]   provides a separate development package or SDK, be sure it has been
+[0.296s]   installed.
+[0.296s] 
+[0.296s] 
+[0.297s] -- Configuring incomplete, errors occurred!
+[0.297s] See also "/home/ndp/datn/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".
+[0.302s] Invoked command in '/home/ndp/datn/build/diffdrive_arduino' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/diffdrive_arduino

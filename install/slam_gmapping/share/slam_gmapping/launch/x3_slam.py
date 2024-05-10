@@ -1,0 +1,1 @@
+/home/ndp/datn/slam_gmapping/launch/x3_slam.py

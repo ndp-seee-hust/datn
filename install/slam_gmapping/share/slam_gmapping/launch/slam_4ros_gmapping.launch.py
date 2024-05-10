@@ -1,0 +1,1 @@
+/home/ndp/datn/slam_gmapping/launch/slam_4ros_gmapping.launch.py

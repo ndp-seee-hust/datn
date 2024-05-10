@@ -1,0 +1,39 @@
+[0.026s] Invoking command in '/home/ndp/datn/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/diffdrive_arduino
+[0.102s] -- The C compiler identification is GNU 9.4.0
+[0.181s] -- The CXX compiler identification is GNU 9.4.0
+[0.188s] -- Check for working C compiler: /usr/bin/cc
+[0.276s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.278s] -- Detecting C compiler ABI info
+[0.343s] -- Detecting C compiler ABI info - done
+[0.354s] -- Detecting C compile features
+[0.354s] -- Detecting C compile features - done
+[0.358s] -- Check for working CXX compiler: /usr/bin/c++
+[0.447s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.448s] -- Detecting CXX compiler ABI info
+[0.529s] -- Detecting CXX compiler ABI info - done
+[0.539s] -- Detecting CXX compile features
+[0.539s] -- Detecting CXX compile features - done
+[0.543s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.570s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.570s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.686s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.718s] CMake Error at CMakeLists.txt:15 (find_package):
+[0.718s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[0.718s]   asked CMake to find a package configuration file provided by "serial", but
+[0.718s]   CMake did not find one.
+[0.718s] 
+[0.718s]   Could not find a package configuration file provided by "serial" with any
+[0.718s]   of the following names:
+[0.718s] 
+[0.718s]     serialConfig.cmake
+[0.718s]     serial-config.cmake
+[0.718s] 
+[0.718s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[0.718s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[0.718s]   provides a separate development package or SDK, be sure it has been
+[0.718s]   installed.
+[0.718s] 
+[0.718s] 
+[0.718s] -- Configuring incomplete, errors occurred!
+[0.719s] See also "/home/ndp/datn/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".
+[0.722s] Invoked command in '/home/ndp/datn/build/diffdrive_arduino' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/ndp/datn/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/diffdrive_arduino

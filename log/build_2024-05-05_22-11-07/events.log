@@ -1,0 +1,869 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.000144] (openslam_gmapping) JobQueued: {'identifier': 'openslam_gmapping', 'dependencies': OrderedDict()}
+[0.000157] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.000180] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/home/ndp/datn/install/openslam_gmapping')])}
+[0.000208] (openslam_gmapping) JobStarted: {'identifier': 'openslam_gmapping'}
+[0.005728] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.009547] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.016167] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'cmake'}
+[0.016308] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/ndp/datn/openslam_gmapping', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/openslam_gmapping'], 'cwd': '/home/ndp/datn/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/openslam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[0.019640] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.019804] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/ndp/datn/my_bot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/my_bot'], 'cwd': '/home/ndp/datn/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[0.025267] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.025627] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/ndp/datn/ydlidar_ros2_driver-master', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/ydlidar_ros2_driver'], 'cwd': '/home/ndp/datn/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[0.074180] (openslam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.074498] (my_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.077894] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099334] (-) TimerEvent: {}
+[0.126028] (openslam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.126344] (my_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.128845] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.130669] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.130785] (my_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.133407] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.194658] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.194839] (my_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.194905] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.195402] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.195539] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.195598] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199378] (-) TimerEvent: {}
+[0.260937] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.261105] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.261175] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.272116] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.272361] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.272450] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.272616] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.272685] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.272743] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.274895] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.274955] (my_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.275010] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.299507] (-) TimerEvent: {}
+[0.350755] (my_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.350937] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.350999] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.351743] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.352156] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.352271] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399611] (-) TimerEvent: {}
+[0.424283] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.428248] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.428648] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.436375] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.436886] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.439221] (my_bot) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.440044] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.440576] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.441161] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.441683] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.442515] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.443881] (openslam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.462291] (my_bot) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.462532] (my_bot) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.465836] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.466088] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.466931] (openslam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.467226] (openslam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.499717] (-) TimerEvent: {}
+[0.600134] (-) TimerEvent: {}
+[0.630010] (my_bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.633795] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.635228] (openslam_gmapping) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.653115] (my_bot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.655548] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.698878] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700229] (-) TimerEvent: {}
+[0.705883] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.731433] (my_bot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.738477] (openslam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.742100] (my_bot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.742334] (my_bot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.742435] (my_bot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.750202] (openslam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[0.751764] (openslam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/ndp/datn/build/openslam_gmapping\n'}
+[0.752534] (my_bot) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.752713] (my_bot) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.754426] (my_bot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.756199] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[0.756839] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'build'}
+[0.758073] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ndp/datn/build/openslam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/ndp/datn/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/openslam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[0.760913] (my_bot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.761420] (my_bot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[0.770126] (my_bot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.770446] (my_bot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.771822] (my_bot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.773906] (my_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.775782] (my_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[0.776578] (my_bot) StdoutLine: {'line': b'-- Build files have been written to: /home/ndp/datn/build/my_bot\n'}
+[0.777058] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.780049] (my_bot) CommandEnded: {'returncode': 0}
+[0.780596] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[0.780976] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ndp/datn/build/my_bot', '--', '-j8', '-l8'], 'cwd': '/home/ndp/datn/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[0.798380] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[0.798648] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_base\x1b[0m\n'}
+[0.800361] (-) TimerEvent: {}
+[0.809435] (openslam_gmapping) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o\x1b[0m\n'}
+[0.812435] (openslam_gmapping) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o\x1b[0m\n'}
+[0.812952] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o\x1b[0m\n'}
+[0.813110] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o\x1b[0m\n'}
+[0.814872] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.825855] (my_bot) CommandEnded: {'returncode': 0}
+[0.860263] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[0.878215] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ndp/datn/build/my_bot'], 'cwd': '/home/ndp/datn/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[0.895419] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.896156] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.897215] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[0.900487] (-) TimerEvent: {}
+[0.912408] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/config/my_bot.rviz\n'}
+[0.927963] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[0.942416] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[0.957132] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[0.965840] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.972042] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[0.987164] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[1.000641] (-) TimerEvent: {}
+[1.002000] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[1.016973] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[1.032157] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[1.047029] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[1.057401] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/environment/path.sh\n'}
+[1.067781] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[1.078192] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/local_setup.bash\n'}
+[1.085264] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libsensor_base.a\x1b[0m\n'}
+[1.086249] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.087784] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/local_setup.sh\n'}
+[1.089385] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.091009] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.097368] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[1.100758] (-) TimerEvent: {}
+[1.107548] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[1.118599] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/package.dsv\n'}
+[1.125313] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] Built target sensor_base\n'}
+[1.129389] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[1.140289] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[1.141793] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_range\x1b[0m\n'}
+[1.142620] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_odometry\x1b[0m\n'}
+[1.153259] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[1.159529] (openslam_gmapping) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o\x1b[0m\n'}
+[1.159868] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o\x1b[0m\n'}
+[1.159993] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o\x1b[0m\n'}
+[1.160100] (openslam_gmapping) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o\x1b[0m\n'}
+[1.168191] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/my_bot/share/my_bot/package.xml\n'}
+[1.199335] (my_bot) CommandEnded: {'returncode': 0}
+[1.201182] (-) TimerEvent: {}
+[1.238024] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.254427] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.260603] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[1.301342] (-) TimerEvent: {}
+[1.309242] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[1.356717] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] Built target utils\n'}
+[1.357023] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.357400] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.401475] (-) TimerEvent: {}
+[1.422835] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.423044] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.495110] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.496781] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.501638] (-) TimerEvent: {}
+[1.581295] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libsensor_odometry.a\x1b[0m\n'}
+[1.601781] (-) TimerEvent: {}
+[1.614123] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] Built target sensor_odometry\n'}
+[1.679425] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.701985] (-) TimerEvent: {}
+[1.782969] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[1.786712] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX static library libsensor_range.a\x1b[0m\n'}
+[1.802102] (-) TimerEvent: {}
+[1.811341] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] Built target sensor_range\n'}
+[1.819681] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target scanmatcher\x1b[0m\n'}
+[1.831378] (openslam_gmapping) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o\x1b[0m\n'}
+[1.831762] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o\x1b[0m\n'}
+[1.831873] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o\x1b[0m\n'}
+[1.834565] (openslam_gmapping) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o\x1b[0m\n'}
+[1.857620] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[1.876208] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.902221] (-) TimerEvent: {}
+[1.963003] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.964828] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.965401] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ndp/datn/ydlidar_ros2_driver-master/src\n'}
+[1.965543] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.967100] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.967332] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.967933] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.968752] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.969457] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.970924] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.971149] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.971771] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.975316] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.991658] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.993433] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/ndp/datn/build/ydlidar_ros2_driver\n'}
+[2.002435] (-) TimerEvent: {}
+[2.003595] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.004406] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[2.005128] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ndp/datn/build/ydlidar_ros2_driver', '--', '-j8', '-l8'], 'cwd': '/home/ndp/datn/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[2.050222] (ydlidar_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ydlidar_ros2_driver_client\x1b[0m\n'}
+[2.050572] (ydlidar_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ydlidar_ros2_driver_node\x1b[0m\n'}
+[2.092478] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o\x1b[0m\n'}
+[2.093156] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o\x1b[0m\n'}
+[2.102570] (-) TimerEvent: {}
+[2.203028] (-) TimerEvent: {}
+[2.303476] (-) TimerEvent: {}
+[2.403920] (-) TimerEvent: {}
+[2.504371] (-) TimerEvent: {}
+[2.604793] (-) TimerEvent: {}
+[2.705226] (-) TimerEvent: {}
+[2.805646] (-) TimerEvent: {}
+[2.906064] (-) TimerEvent: {}
+[3.006501] (-) TimerEvent: {}
+[3.106923] (-) TimerEvent: {}
+[3.207371] (-) TimerEvent: {}
+[3.302336] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libscanmatcher.a\x1b[0m\n'}
+[3.307508] (-) TimerEvent: {}
+[3.333430] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] Built target scanmatcher\n'}
+[3.344151] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gridfastslam\x1b[0m\n'}
+[3.357476] (openslam_gmapping) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o\x1b[0m\n'}
+[3.360848] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o\x1b[0m\n'}
+[3.361167] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o\x1b[0m\n'}
+[3.361311] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o\x1b[0m\n'}
+[3.407643] (-) TimerEvent: {}
+[3.508301] (-) TimerEvent: {}
+[3.551405] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[3.551821] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:163:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.551968] (ydlidar_ros2_driver) StderrLine: {'line': b'  163 |     [&laser](\x1b[01;35m\x1b[Kconst std::shared_ptr<rmw_request_id_t> request_header\x1b[m\x1b[K,\n'}
+[3.552084] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.552196] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:164:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.552322] (ydlidar_ros2_driver) StderrLine: {'line': b'  164 |   \x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[3.552436] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.552548] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:165:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.552660] (ydlidar_ros2_driver) StderrLine: {'line': b'  165 |   \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response\x1b[m\x1b[K) -> bool\n'}
+[3.552769] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[3.560355] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[3.560707] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:173:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.560849] (ydlidar_ros2_driver) StderrLine: {'line': b'  173 |     [&laser](\x1b[01;35m\x1b[Kconst std::shared_ptr<rmw_request_id_t> request_header\x1b[m\x1b[K,\n'}
+[3.560969] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.561079] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:174:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.561190] (ydlidar_ros2_driver) StderrLine: {'line': b'  174 |   \x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[3.561303] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.561412] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/ydlidar_ros2_driver-master/src/ydlidar_ros2_driver_node.cpp:175:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.561540] (ydlidar_ros2_driver) StderrLine: {'line': b'  175 |   \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response\x1b[m\x1b[K) -> bool\n'}
+[3.561651] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[3.608435] (-) TimerEvent: {}
+[3.708927] (-) TimerEvent: {}
+[3.809469] (-) TimerEvent: {}
+[3.909910] (-) TimerEvent: {}
+[4.010370] (-) TimerEvent: {}
+[4.110807] (-) TimerEvent: {}
+[4.211249] (-) TimerEvent: {}
+[4.311678] (-) TimerEvent: {}
+[4.412115] (-) TimerEvent: {}
+[4.512561] (-) TimerEvent: {}
+[4.613001] (-) TimerEvent: {}
+[4.713430] (-) TimerEvent: {}
+[4.813874] (-) TimerEvent: {}
+[4.914306] (-) TimerEvent: {}
+[5.014779] (-) TimerEvent: {}
+[5.115311] (-) TimerEvent: {}
+[5.208297] (openslam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libgridfastslam.a\x1b[0m\n'}
+[5.215435] (-) TimerEvent: {}
+[5.238677] (openslam_gmapping) StdoutLine: {'line': b'[100%] Built target gridfastslam\n'}
+[5.249605] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[5.273063] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'install'}
+[5.274758] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ndp/datn/build/openslam_gmapping'], 'cwd': '/home/ndp/datn/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/openslam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[5.282870] (openslam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.283283] (openslam_gmapping) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.283721] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/lib/libgridfastslam.a\n'}
+[5.292397] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/lib/libscanmatcher.a\n'}
+[5.300774] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/lib/libsensor_base.a\n'}
+[5.309381] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[5.315565] (-) TimerEvent: {}
+[5.317900] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[5.326468] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[5.326762] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[5.326928] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/lib/libsensor_odometry.a\n'}
+[5.335455] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/lib/libsensor_range.a\n'}
+[5.344393] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/lib/libutils.a\n'}
+[5.353068] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[5.353387] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[5.353534] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[5.353684] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[5.354233] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/grid/accessstate.h\n'}
+[5.362681] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/grid/array2d.h\n'}
+[5.370966] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/grid/harray2d.h\n'}
+[5.379117] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/grid/map.h\n'}
+[5.387414] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h\n'}
+[5.395868] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx\n'}
+[5.404305] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h\n'}
+[5.412536] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/log/configuration.h\n'}
+[5.415669] (-) TimerEvent: {}
+[5.420992] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/log/sensorlog.h\n'}
+[5.429569] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h\n'}
+[5.437816] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h\n'}
+[5.446750] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h\n'}
+[5.455055] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h\n'}
+[5.463363] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h\n'}
+[5.471605] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h\n'}
+[5.480073] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h\n'}
+[5.488355] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h\n'}
+[5.496523] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h\n'}
+[5.504852] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h\n'}
+[5.512969] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/utils/autoptr.h\n'}
+[5.515780] (-) TimerEvent: {}
+[5.521460] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/utils/commandline.h\n'}
+[5.529893] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/utils/gvalues.h\n'}
+[5.538000] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/utils/macro_params.h\n'}
+[5.546288] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/utils/point.h\n'}
+[5.554656] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/include//gmapping/utils/stat.h\n'}
+[5.563234] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping\n'}
+[5.571802] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping\n'}
+[5.580239] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh\n'}
+[5.588760] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv\n'}
+[5.597295] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh\n'}
+[5.605607] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv\n'}
+[5.614148] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash\n'}
+[5.615887] (-) TimerEvent: {}
+[5.622516] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh\n'}
+[5.630896] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh\n'}
+[5.639374] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv\n'}
+[5.648275] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.dsv\n'}
+[5.657305] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping\n'}
+[5.665808] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.674603] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.682976] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake\n'}
+[5.691577] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake\n'}
+[5.700128] (openslam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.xml\n'}
+[5.710571] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[5.716029] (-) TimerEvent: {}
+[5.745709] (openslam_gmapping) JobEnded: {'identifier': 'openslam_gmapping', 'rc': 0}
+[5.746940] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[5.755247] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'cmake'}
+[5.756796] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/ndp/datn/slam_gmapping', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ndp/datn/install/slam_gmapping'], 'cwd': '/home/ndp/datn/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/datn/install/openslam_gmapping/lib:/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/datn/install/openslam_gmapping:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/slam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/datn/install/openslam_gmapping:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[5.810593] (slam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[5.816150] (-) TimerEvent: {}
+[5.861484] (slam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[5.865922] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[5.916277] (-) TimerEvent: {}
+[5.927868] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[5.928721] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.991206] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.002544] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.002837] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.005184] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[6.016405] (-) TimerEvent: {}
+[6.077984] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[6.078927] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.116534] (-) TimerEvent: {}
+[6.157684] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.167266] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ydlidar_ros2_driver_node\x1b[0m\n'}
+[6.170554] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.171043] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.171807] (slam_gmapping) StderrLine: {'line': b' -fuse-ld=lld -Wl,--disable-new-dtags\n'}
+[6.173602] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[6.201016] (slam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[6.201365] (slam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.216751] (-) TimerEvent: {}
+[6.317282] (-) TimerEvent: {}
+[6.390663] (slam_gmapping) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[6.414658] (slam_gmapping) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[6.417381] (-) TimerEvent: {}
+[6.442653] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] Built target ydlidar_ros2_driver_node\n'}
+[6.444304] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.450153] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.510726] (slam_gmapping) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[6.517473] (-) TimerEvent: {}
+[6.534694] (slam_gmapping) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.599904] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.617581] (-) TimerEvent: {}
+[6.638960] (slam_gmapping) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[6.717788] (-) TimerEvent: {}
+[6.738757] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[6.748527] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[6.799011] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[6.800314] (slam_gmapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.801022] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.817978] (-) TimerEvent: {}
+[6.861239] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.861504] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.918112] (-) TimerEvent: {}
+[6.923476] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[6.923787] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[6.930246] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ydlidar_ros2_driver_client\x1b[0m\n'}
+[6.971912] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[6.972083] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[7.018257] (-) TimerEvent: {}
+[7.037003] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[7.038034] (slam_gmapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.118437] (-) TimerEvent: {}
+[7.140962] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_client\n'}
+[7.150650] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[7.172175] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[7.172679] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ndp/datn/build/ydlidar_ros2_driver'], 'cwd': '/home/ndp/datn/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[7.181065] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.181296] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.181721] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[7.189278] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[7.196693] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/4ros_ydlidar_launch.py\n'}
+[7.203919] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch.cpython-36.pyc\n'}
+[7.211049] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch_view.cpython-36.pyc\n'}
+[7.217991] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/test_gmapping_launch.py\n'}
+[7.218528] (-) TimerEvent: {}
+[7.225199] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/view_ydlidar_launch.py\n'}
+[7.232210] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/x3.py\n'}
+[7.239140] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/x3_view.py\n'}
+[7.246250] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[7.253412] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_4ros_view_launch.py\n'}
+[7.260714] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[7.267540] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_raw_launch.py\n'}
+[7.274863] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[7.281920] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar_4ros.yaml\n'}
+[7.289205] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar_x3.yaml\n'}
+[7.296223] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[7.303601] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/test_gmapping.rviz\n'}
+[7.310476] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[7.317733] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[7.318612] (-) TimerEvent: {}
+[7.324794] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[7.331924] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[7.338967] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[7.346411] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[7.353622] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[7.361145] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[7.368460] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[7.375399] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[7.382595] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[7.389801] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[7.396897] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[7.404233] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[7.411165] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[7.418091] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[7.418708] (-) TimerEvent: {}
+[7.426517] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[7.443900] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[7.451553] (slam_gmapping) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[7.454637] (slam_gmapping) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[7.458254] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[7.474249] (slam_gmapping) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[7.518910] (-) TimerEvent: {}
+[7.526637] (slam_gmapping) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[7.579065] (slam_gmapping) StdoutLine: {'line': b'-- Found openslam_gmapping: 0.1.2 (/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/cmake)\n'}
+[7.581116] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[7.619028] (-) TimerEvent: {}
+[7.632667] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.632915] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ndp/datn/slam_gmapping/include\n'}
+[7.632972] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.633255] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.633747] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.633951] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[7.634690] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.634737] (slam_gmapping) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.635116] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.637593] (slam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.650422] (slam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[7.651571] (slam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/ndp/datn/build/slam_gmapping\n'}
+[7.658938] (slam_gmapping) CommandEnded: {'returncode': 0}
+[7.659340] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'build'}
+[7.660705] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ndp/datn/build/slam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/ndp/datn/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/datn/install/openslam_gmapping/lib:/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/datn/install/openslam_gmapping:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/slam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/datn/install/openslam_gmapping:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[7.698250] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target transform\x1b[0m\n'}
+[7.698439] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target slam_gmapping\x1b[0m\n'}
+[7.719232] (-) TimerEvent: {}
+[7.735543] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o\x1b[0m\n'}
+[7.735764] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/transform.dir/src/transform.cpp.o\x1b[0m\n'}
+[7.819342] (-) TimerEvent: {}
+[7.919660] (-) TimerEvent: {}
+[8.019966] (-) TimerEvent: {}
+[8.120329] (-) TimerEvent: {}
+[8.220704] (-) TimerEvent: {}
+[8.321096] (-) TimerEvent: {}
+[8.421492] (-) TimerEvent: {}
+[8.521864] (-) TimerEvent: {}
+[8.622274] (-) TimerEvent: {}
+[8.722700] (-) TimerEvent: {}
+[8.823092] (-) TimerEvent: {}
+[8.923470] (-) TimerEvent: {}
+[8.981079] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[8.981293] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.981359] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.981407] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.981465] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[8.981515] (slam_gmapping) StderrLine: {'line': b'  140 |  \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[8.981560] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.981605] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.981653] (slam_gmapping) StderrLine: {'line': b'  142 |   \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[8.981698] (slam_gmapping) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.984371] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[8.984498] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.984551] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.984599] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.984646] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[8.984692] (slam_gmapping) StderrLine: {'line': b'  140 |  \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[8.984736] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.984780] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.984845] (slam_gmapping) StderrLine: {'line': b'  142 |   \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[8.984889] (slam_gmapping) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.985918] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:10\x1b[m\x1b[K,\n'}
+[8.986022] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.986192] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.986284] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/point.h:\x1b[m\x1b[K At global scope:\n'}
+[8.986347] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/point.h:205:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.986404] (slam_gmapping) StderrLine: {'line': b'  205 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[8.986458] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.986510] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:4\x1b[m\x1b[K,\n'}
+[8.986565] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[8.986621] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.986670] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.986717] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.986765] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h:21:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.986818] (slam_gmapping) StderrLine: {'line': b'   21 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[8.986866] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.987039] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[8.987169] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.987232] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.987289] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.987342] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:23:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.987399] (slam_gmapping) StderrLine: {'line': b'   23 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[8.987456] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.987510] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:7\x1b[m\x1b[K,\n'}
+[8.987567] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.987622] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.987676] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.987731] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.987785] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.987839] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.989365] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:8\x1b[m\x1b[K,\n'}
+[8.989458] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.989514] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.989563] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.989611] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangesensor.h:33:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.989659] (slam_gmapping) StderrLine: {'line': b'   33 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.989706] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.989950] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:9\x1b[m\x1b[K,\n'}
+[8.990033] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.990084] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.990134] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.990181] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.990230] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.990276] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.990322] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:10\x1b[m\x1b[K,\n'}
+[8.990370] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.990481] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.990549] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.990607] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangereading.h:24:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.990665] (slam_gmapping) StderrLine: {'line': b'   24 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.990721] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.990777] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:11\x1b[m\x1b[K,\n'}
+[8.990834] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.990890] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.990946] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.991003] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/configuration.h:15:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.991060] (slam_gmapping) StderrLine: {'line': b'   15 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.991129] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.991185] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:10\x1b[m\x1b[K,\n'}
+[8.991241] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.991299] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.991608] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/point.h:\x1b[m\x1b[K At global scope:\n'}
+[8.991696] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/point.h:205:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.991764] (slam_gmapping) StderrLine: {'line': b'  205 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[8.991827] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.991888] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:4\x1b[m\x1b[K,\n'}
+[8.991957] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[8.992019] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.992080] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.992142] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.992207] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h:21:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.992265] (slam_gmapping) StderrLine: {'line': b'   21 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[8.992320] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.992373] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[8.992425] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.992482] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.992536] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.992589] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:23:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.992653] (slam_gmapping) StderrLine: {'line': b'   23 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[8.992711] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.992767] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:7\x1b[m\x1b[K,\n'}
+[8.992822] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.992878] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.992934] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.992990] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.993048] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.993104] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.993238] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.993297] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.993351] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.993407] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.993462] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.993511] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.993801] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:8\x1b[m\x1b[K,\n'}
+[8.993859] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.993910] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.993960] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.994010] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangesensor.h:33:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.994068] (slam_gmapping) StderrLine: {'line': b'   33 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.994119] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.994248] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:9\x1b[m\x1b[K,\n'}
+[8.994301] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.994356] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.994464] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.994517] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.994571] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.994681] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.994732] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:10\x1b[m\x1b[K,\n'}
+[8.994783] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.994834] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.994886] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.994935] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangereading.h:24:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.994987] (slam_gmapping) StderrLine: {'line': b'   24 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.995038] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.995104] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:11\x1b[m\x1b[K,\n'}
+[8.995232] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.995290] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.995349] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.995401] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/configuration.h:15:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.995455] (slam_gmapping) StderrLine: {'line': b'   15 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.995508] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.995561] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/map.h:5\x1b[m\x1b[K,\n'}
+[8.995614] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[8.995666] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[8.995717] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[8.995770] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.995823] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.995877] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/accessstate.h:6:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.995929] (slam_gmapping) StderrLine: {'line': b'    6 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.995983] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.997620] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[8.997687] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[8.997736] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.997784] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/log/sensorlog.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.997833] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.997879] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.998055] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/map.h:6\x1b[m\x1b[K,\n'}
+[8.998105] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[8.998153] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[8.998201] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[8.998248] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[8.998299] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[8.998345] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/array2d.h:185:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.998399] (slam_gmapping) StderrLine: {'line': b'  185 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.998449] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.000102] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/map.h:5\x1b[m\x1b[K,\n'}
+[9.000219] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[9.000279] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.000341] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.000394] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.000446] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.000498] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/accessstate.h:6:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.000545] (slam_gmapping) StderrLine: {'line': b'    6 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.000589] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.000731] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[9.000820] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.000873] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.000921] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.000966] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.001011] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/map.h:262:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.001202] (slam_gmapping) StderrLine: {'line': b'  262 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.001256] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.001303] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/harray2d.h:5\x1b[m\x1b[K,\n'}
+[9.001350] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[9.001405] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.001468] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.001524] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.001579] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.001633] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/autoptr.h:96:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.001689] (slam_gmapping) StderrLine: {'line': b'   96 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.001745] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.003081] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/map.h:6\x1b[m\x1b[K,\n'}
+[9.003200] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[9.003268] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.003329] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.003387] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.003433] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.003478] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/array2d.h:185:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.003526] (slam_gmapping) StderrLine: {'line': b'  185 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.003571] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.005686] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[9.005737] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.005782] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.005827] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.005877] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.005921] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/map.h:262:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.005966] (slam_gmapping) StderrLine: {'line': b'  262 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.006010] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.006130] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/harray2d.h:5\x1b[m\x1b[K,\n'}
+[9.006183] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[9.006227] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.006271] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.006315] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.006359] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.006402] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/autoptr.h:96:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.006449] (slam_gmapping) StderrLine: {'line': b'   96 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.006502] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.007118] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[9.007239] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.007299] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.007353] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.007405] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.007457] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/harray2d.h:197:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.007510] (slam_gmapping) StderrLine: {'line': b'  197 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.007560] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.008246] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.008354] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.008414] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.008466] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.008514] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:52:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.008563] (slam_gmapping) StderrLine: {'line': b'   52 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.008611] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.009336] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:7\x1b[m\x1b[K,\n'}
+[9.009446] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.009510] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.009566] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.009620] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/stat.h:145:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.009675] (slam_gmapping) StderrLine: {'line': b'  145 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[9.009726] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.012431] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[9.012552] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.012603] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.012650] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.012696] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.012740] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/grid/harray2d.h:197:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.012795] (slam_gmapping) StderrLine: {'line': b'  197 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.012838] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.013410] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[9.013510] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.013568] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.013628] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.013678] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:52:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.013729] (slam_gmapping) StderrLine: {'line': b'   52 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.013777] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.014452] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:7\x1b[m\x1b[K,\n'}
+[9.014508] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.014564] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.014614] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.014663] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/utils/stat.h:145:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.014712] (slam_gmapping) StderrLine: {'line': b'  145 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[9.014759] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.018358] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.018489] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.018544] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.018592] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:250:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.018640] (slam_gmapping) StderrLine: {'line': b'  250 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.018684] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.018727] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:16\x1b[m\x1b[K,\n'}
+[9.018771] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.018815] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.018860] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/motionmodel.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.018906] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.018949] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.023401] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[9.023530] (-) TimerEvent: {}
+[9.023628] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.023684] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.023732] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:250:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.023777] (slam_gmapping) StderrLine: {'line': b'  250 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.023819] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.023862] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:16\x1b[m\x1b[K,\n'}
+[9.023917] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.023961] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.024003] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/motionmodel.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.024046] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.024090] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.032217] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/transform.h:25\x1b[m\x1b[K,\n'}
+[9.032393] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/transform.cpp:3\x1b[m\x1b[K:\n'}
+[9.032447] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:335:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.032508] (slam_gmapping) StderrLine: {'line': b'  335 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.032554] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.037844] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.038007] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ndp/datn/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.038063] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ndp/datn/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:335:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[9.038120] (slam_gmapping) StderrLine: {'line': b'  335 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.038166] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.123662] (-) TimerEvent: {}
+[9.224028] (-) TimerEvent: {}
+[9.324361] (-) TimerEvent: {}
+[9.424747] (-) TimerEvent: {}
+[9.525146] (-) TimerEvent: {}
+[9.625551] (-) TimerEvent: {}
+[9.725947] (-) TimerEvent: {}
+[9.826341] (-) TimerEvent: {}
+[9.926731] (-) TimerEvent: {}
+[10.027141] (-) TimerEvent: {}
+[10.127455] (-) TimerEvent: {}
+[10.227805] (-) TimerEvent: {}
+[10.328167] (-) TimerEvent: {}
+[10.428536] (-) TimerEvent: {}
+[10.536642] (-) TimerEvent: {}
+[10.636999] (-) TimerEvent: {}
+[10.737390] (-) TimerEvent: {}
+[10.755037] (slam_gmapping) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable transform\x1b[0m\n'}
+[10.837651] (-) TimerEvent: {}
+[10.932129] (slam_gmapping) StdoutLine: {'line': b'[ 75%] Built target transform\n'}
+[10.937820] (-) TimerEvent: {}
+[11.038225] (-) TimerEvent: {}
+[11.138622] (-) TimerEvent: {}
+[11.239035] (-) TimerEvent: {}
+[11.339408] (-) TimerEvent: {}
+[11.439810] (-) TimerEvent: {}
+[11.540214] (-) TimerEvent: {}
+[11.640600] (-) TimerEvent: {}
+[11.740964] (-) TimerEvent: {}
+[11.841299] (-) TimerEvent: {}
+[11.941654] (-) TimerEvent: {}
+[12.042009] (-) TimerEvent: {}
+[12.142362] (-) TimerEvent: {}
+[12.242710] (-) TimerEvent: {}
+[12.343062] (-) TimerEvent: {}
+[12.443433] (-) TimerEvent: {}
+[12.543783] (-) TimerEvent: {}
+[12.644134] (-) TimerEvent: {}
+[12.744497] (-) TimerEvent: {}
+[12.844834] (-) TimerEvent: {}
+[12.945187] (-) TimerEvent: {}
+[13.045536] (-) TimerEvent: {}
+[13.145894] (-) TimerEvent: {}
+[13.246249] (-) TimerEvent: {}
+[13.346607] (-) TimerEvent: {}
+[13.446956] (-) TimerEvent: {}
+[13.547314] (-) TimerEvent: {}
+[13.647593] (-) TimerEvent: {}
+[13.747896] (-) TimerEvent: {}
+[13.848292] (-) TimerEvent: {}
+[13.948754] (-) TimerEvent: {}
+[13.984471] (slam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable slam_gmapping\x1b[0m\n'}
+[14.048941] (-) TimerEvent: {}
+[14.149355] (-) TimerEvent: {}
+[14.249818] (-) TimerEvent: {}
+[14.273486] (slam_gmapping) StdoutLine: {'line': b'[100%] Built target slam_gmapping\n'}
+[14.283218] (slam_gmapping) CommandEnded: {'returncode': 0}
+[14.301708] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'install'}
+[14.301996] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ndp/datn/build/slam_gmapping'], 'cwd': '/home/ndp/datn/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ndp'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ndp/datn/install/openslam_gmapping/lib:/home/ndp/ydlidar_ws/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ndp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1451'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ndp/my_bot/install:/home/ndp/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ndp'), ('JOURNAL_STREAM', '8:41896'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ndp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ndp:@/tmp/.ICE-unix/1591,unix/ndp:/tmp/.ICE-unix/1591'), ('INVOCATION_ID', '6c8d3937f866477aa6607c1838dd79a6'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1255797e_5976_48a6_bbf7_81df8af5be61'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.630'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ndp/datn/install/openslam_gmapping:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ndp/datn/build/slam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=28f158df5c2f4f65c71ad7b2663746f8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ndp/datn/install/openslam_gmapping:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/opt/ros/foxy')]), 'shell': False}
+[14.309556] (slam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.309780] (slam_gmapping) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.310119] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/lib/slam_gmapping/slam_gmapping\n'}
+[14.318544] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/lib/slam_gmapping/transform\n'}
+[14.328081] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/gmapping_4ros_launch.py\n'}
+[14.334429] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/gmapping_x3_launch.py\n'}
+[14.340339] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/slam_4ros_gmapping.launch.py\n'}
+[14.346141] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/test_gmapping.launch.py\n'}
+[14.349984] (-) TimerEvent: {}
+[14.352298] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/x3_slam.py\n'}
+[14.357919] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/ydlidar_slam.py\n'}
+[14.364173] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/params/slam_gmapping.yaml\n'}
+[14.369985] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping\n'}
+[14.376288] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping\n'}
+[14.382426] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh\n'}
+[14.389082] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv\n'}
+[14.395177] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/environment/path.sh\n'}
+[14.401588] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/environment/path.dsv\n'}
+[14.407873] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/local_setup.bash\n'}
+[14.413968] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/local_setup.sh\n'}
+[14.419916] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/local_setup.zsh\n'}
+[14.425907] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/local_setup.dsv\n'}
+[14.431956] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.dsv\n'}
+[14.438021] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping\n'}
+[14.444439] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake\n'}
+[14.450165] (-) TimerEvent: {}
+[14.450432] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake\n'}
+[14.457101] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.xml\n'}
+[14.465000] (slam_gmapping) CommandEnded: {'returncode': 0}
+[14.500731] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 0}
+[14.501597] (-) EventReactorShutdown: {}
