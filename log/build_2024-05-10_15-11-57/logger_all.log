@@ -1,0 +1,603 @@
+[0.235s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.235s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbb4ff9eac0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbb4ff9eac0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fbb4fe1a730>)
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.348s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ndp/datn'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extension 'ignore'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extension 'ignore_ament_install'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extensions ['colcon_pkg']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extension 'colcon_pkg'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extensions ['colcon_meta']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extension 'colcon_meta'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extensions ['ros']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(diffdrive_arduino) by extension 'ros'
+[0.360s] DEBUG:colcon.colcon_core.package_identification:Package 'diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extension 'ignore'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extension 'ignore_ament_install'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extensions ['colcon_pkg']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extension 'colcon_pkg'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extensions ['colcon_meta']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(my_bot) by extension 'ros'
+[0.361s] DEBUG:colcon.colcon_core.package_identification:Package 'my_bot' with type 'ros.ament_cmake' and name 'my_bot'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'ignore'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'ignore_ament_install'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['colcon_pkg']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'colcon_pkg'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['colcon_meta']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'ros'
+[0.362s] DEBUG:colcon.colcon_core.package_identification:Package 'openslam_gmapping' with type 'ros.ament_cmake' and name 'openslam_gmapping'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ignore_ament_install'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['colcon_pkg']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'colcon_pkg'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['colcon_meta']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'colcon_meta'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['ros']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ros'
+[0.362s] DEBUG:colcon.colcon_core.package_identification:Package 'serial' with type 'ros.ament_cmake' and name 'serial'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'ros'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['cmake', 'python']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'cmake'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'python'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['python_setup_py']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'python_setup_py'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo) by extension 'ros'
+[0.363s] DEBUG:colcon.colcon_core.package_identification:Package 'serial_motor_demo/serial_motor_demo' with type 'ros.ament_python' and name 'serial_motor_demo'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo/serial_motor_demo_msgs) by extension 'ros'
+[0.364s] DEBUG:colcon.colcon_core.package_identification:Package 'serial_motor_demo/serial_motor_demo_msgs' with type 'ros.ament_cmake' and name 'serial_motor_demo_msgs'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'slam_gmapping' with type 'ros.ament_cmake' and name 'slam_gmapping'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'ydlidar_ros2_driver-master' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.384s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ndp/my_bot/install
+[0.384s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ndp/ydlidar_ws/install
+[0.385s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/ndp/datn/install
+[0.386s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 288 installed packages in /opt/ros/foxy
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'my_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/my_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/my_bot', 'merge_install': False, 'path': '/home/ndp/datn/my_bot', 'symlink_install': True, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'openslam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/openslam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/openslam_gmapping', 'merge_install': False, 'path': '/home/ndp/datn/openslam_gmapping', 'symlink_install': True, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/serial', 'merge_install': False, 'path': '/home/ndp/datn/serial', 'symlink_install': True, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.453s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/serial_motor_demo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/serial_motor_demo_msgs', 'merge_install': False, 'path': '/home/ndp/datn/serial_motor_demo/serial_motor_demo_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.453s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/ndp/datn/ydlidar_ros2_driver-master', 'symlink_install': True, 'test_result_base': None}
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.453s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/ndp/datn/diffdrive_arduino', 'symlink_install': True, 'test_result_base': None}
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.454s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/serial_motor_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/serial_motor_demo', 'merge_install': False, 'path': '/home/ndp/datn/serial_motor_demo/serial_motor_demo', 'symlink_install': True, 'test_result_base': None}
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.454s] DEBUG:colcon.colcon_core.verb:Building package 'slam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ndp/datn/build/slam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ndp/datn/install/slam_gmapping', 'merge_install': False, 'path': '/home/ndp/datn/slam_gmapping', 'symlink_install': True, 'test_result_base': None}
+[0.454s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.455s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/openslam_gmapping' with build type 'ament_cmake'
+[0.455s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/openslam_gmapping'
+[0.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.463s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/serial' with build type 'ament_cmake'
+[0.463s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/serial'
+[0.463s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.463s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.468s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/serial_motor_demo/serial_motor_demo_msgs' with build type 'ament_cmake'
+[0.469s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/serial_motor_demo/serial_motor_demo_msgs'
+[0.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.474s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/my_bot' with build type 'ament_cmake'
+[0.474s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/my_bot'
+[0.474s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.474s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.479s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/ydlidar_ros2_driver-master' with build type 'ament_cmake'
+[0.479s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/ydlidar_ros2_driver-master'
+[0.479s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.480s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/openslam_gmapping -- -j8 -l8
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/serial -- -j8 -l8
+[0.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/serial_motor_demo_msgs -- -j8 -l8
+[0.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/my_bot -- -j8 -l8
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/ydlidar_ros2_driver -- -j8 -l8
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/my_bot -- -j8 -l8
+[0.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/my_bot
+[0.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/ydlidar_ros2_driver -- -j8 -l8
+[0.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/serial -- -j8 -l8
+[0.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_bot)
+[0.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/my_bot
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot' for CMake module files
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot' for CMake config files
+[0.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'cmake_prefix_path')
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/my_bot/share/my_bot/hook/cmake_prefix_path.ps1'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/my_bot/share/my_bot/hook/cmake_prefix_path.dsv'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/my_bot/share/my_bot/hook/cmake_prefix_path.sh'
+[0.705s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/bin'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/lib/pkgconfig/my_bot.pc'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/lib/python3.8/site-packages'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/bin'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.ps1'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/my_bot/share/my_bot/package.dsv'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.sh'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.bash'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.zsh'
+[0.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/my_bot/share/colcon-core/packages/my_bot)
+[0.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/serial
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/ydlidar_ros2_driver
+[0.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/openslam_gmapping -- -j8 -l8
+[0.740s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_bot)
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot' for CMake module files
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot' for CMake config files
+[0.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'cmake_prefix_path')
+[0.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/my_bot/share/my_bot/hook/cmake_prefix_path.ps1'
+[0.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/my_bot/share/my_bot/hook/cmake_prefix_path.dsv'
+[0.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/my_bot/share/my_bot/hook/cmake_prefix_path.sh'
+[0.747s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/bin'
+[0.747s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/lib/pkgconfig/my_bot.pc'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/lib/python3.8/site-packages'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/my_bot/bin'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/my_bot/share/my_bot/package.dsv'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.sh'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.bash'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/my_bot/share/my_bot/package.zsh'
+[0.751s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/my_bot/share/colcon-core/packages/my_bot)
+[0.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial' for CMake module files
+[0.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/serial
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial' for CMake config files
+[0.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/lib'
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/bin'
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/lib/pkgconfig/serial.pc'
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/lib/python3.8/site-packages'
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/bin'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.ps1'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/serial/share/serial/package.dsv'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.sh'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.bash'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.zsh'
+[0.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/serial/share/colcon-core/packages/serial)
+[0.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[0.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/ydlidar_ros2_driver
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver' for CMake module files
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver' for CMake config files
+[0.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[0.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[0.767s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/lib'
+[0.767s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/bin'
+[0.767s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[0.767s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/lib/python3.8/site-packages'
+[0.767s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/bin'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[0.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[0.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[0.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/openslam_gmapping
+[0.803s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.803s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial' for CMake module files
+[0.805s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial' for CMake config files
+[0.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/lib'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/bin'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/lib/pkgconfig/serial.pc'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/lib/python3.8/site-packages'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial/bin'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.ps1'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/serial/share/serial/package.dsv'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.sh'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.bash'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial/share/serial/package.zsh'
+[0.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/serial/share/colcon-core/packages/serial)
+[0.815s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/diffdrive_arduino' with build type 'ament_cmake'
+[0.815s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/diffdrive_arduino'
+[0.816s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.816s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver' for CMake module files
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver' for CMake config files
+[0.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[0.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/lib'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/bin'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/lib/python3.8/site-packages'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/ydlidar_ros2_driver/bin'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[0.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[0.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping' for CMake module files
+[0.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/openslam_gmapping
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping' for CMake config files
+[0.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[0.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/lib'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/bin'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/lib/python3.8/site-packages'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/bin'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[0.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[0.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/serial_motor_demo_msgs -- -j8 -l8
+[0.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/diffdrive_arduino -- -j8 -l8
+[0.862s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping' for CMake module files
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping' for CMake config files
+[0.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/lib'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/bin'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/lib/python3.8/site-packages'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/openslam_gmapping/bin'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[0.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[0.869s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ndp/datn/slam_gmapping' with build type 'ament_cmake'
+[0.869s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ndp/datn/slam_gmapping'
+[0.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.886s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/serial:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/slam_gmapping -- -j8 -l8
+[0.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/serial_motor_demo_msgs
+[0.934s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/diffdrive_arduino -- -j8 -l8
+[0.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/diffdrive_arduino
+[0.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/serial:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --build /home/ndp/datn/build/slam_gmapping -- -j8 -l8
+[1.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[1.002s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino' for CMake module files
+[1.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/diffdrive_arduino
+[1.003s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino' for CMake config files
+[1.003s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/lib'
+[1.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[1.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[1.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[1.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/bin'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/lib/python3.8/site-packages'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/bin'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[1.009s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/serial:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/slam_gmapping
+[1.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs' for CMake module files
+[1.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/serial_motor_demo_msgs
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs' for CMake config files
+[1.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'cmake_prefix_path')
+[1.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.ps1'
+[1.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.dsv'
+[1.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.sh'
+[1.022s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/lib'
+[1.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'ld_library_path_lib')
+[1.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.ps1'
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.dsv'
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.sh'
+[1.023s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/bin'
+[1.023s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[1.023s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/lib/python3.8/site-packages'
+[1.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'pythonpath')
+[1.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.ps1'
+[1.024s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.dsv'
+[1.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.sh'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/bin'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[1.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[1.040s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[1.040s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino' for CMake module files
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino' for CMake config files
+[1.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/lib'
+[1.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[1.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/bin'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/lib/python3.8/site-packages'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/diffdrive_arduino/bin'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[1.046s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[1.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping' for CMake module files
+[1.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/serial:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot:/home/ndp/datn/install/serial_motor_demo:/opt/ros/foxy /usr/bin/cmake --install /home/ndp/datn/build/slam_gmapping
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping' for CMake config files
+[1.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/lib'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/bin'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/lib/python3.8/site-packages'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/bin'
+[1.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.sh'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.bash'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[1.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[1.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping' for CMake module files
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping' for CMake config files
+[1.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[1.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[1.079s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[1.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/lib'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/bin'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[1.080s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/lib/python3.8/site-packages'
+[1.080s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/slam_gmapping/bin'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[1.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.sh'
+[1.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.bash'
+[1.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[1.082s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[1.098s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs' for CMake module files
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs' for CMake config files
+[1.100s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'cmake_prefix_path')
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.sh'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/lib'
+[1.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'ld_library_path_lib')
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.dsv'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.sh'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/bin'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/lib/python3.8/site-packages'
+[1.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'pythonpath')
+[1.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.sh'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo_msgs/bin'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[1.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[1.104s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ndp/datn/serial_motor_demo/serial_motor_demo' with build type 'ament_python'
+[1.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'ament_prefix_path')
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.ps1'
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.dsv'
+[1.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.sh'
+[1.106s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.106s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.270s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ndp/datn/serial_motor_demo/serial_motor_demo'
+[1.270s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.270s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ndp/datn/build/serial_motor_demo': CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/serial:/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot PYTHONPATH=/home/ndp/datn/build/serial_motor_demo/prefix_override:/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages:/home/ndp/datn/install/serial_motor_demo_msgs/lib/python3.8/site-packages:/home/ndp/datn/build/serial_motor_demo:/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ndp/datn/build/serial_motor_demo/build --no-deps symlink_data
+[1.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'pythonpath_develop')
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/build/serial_motor_demo/share/serial_motor_demo/hook/pythonpath_develop.ps1'
+[1.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ndp/datn/build/serial_motor_demo' returned '0': CMAKE_PREFIX_PATH=/home/ndp/datn/install/serial_motor_demo_msgs:/home/ndp/datn/install/ydlidar_ros2_driver:/home/ndp/datn/install/slam_gmapping:/home/ndp/datn/install/diffdrive_arduino:/home/ndp/datn/install/serial:/home/ndp/datn/install/openslam_gmapping:/home/ndp/datn/install/my_bot:/home/ndp/ydlidar_ws/install/ydlidar_ros2_driver:/home/ndp/ydlidar_ws/install/slam_gmapping:/home/ndp/ydlidar_ws/install/openslam_gmapping:/home/ndp/my_bot/install/my_bot PYTHONPATH=/home/ndp/datn/build/serial_motor_demo/prefix_override:/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages:/home/ndp/datn/install/serial_motor_demo_msgs/lib/python3.8/site-packages:/home/ndp/datn/build/serial_motor_demo:/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ndp/datn/build/serial_motor_demo/build --no-deps symlink_data
+[1.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/build/serial_motor_demo/share/serial_motor_demo/hook/pythonpath_develop.dsv'
+[1.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/build/serial_motor_demo/share/serial_motor_demo/hook/pythonpath_develop.sh'
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo' for CMake module files
+[1.881s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo' for CMake config files
+[1.881s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo/lib'
+[1.881s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo/bin'
+[1.881s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo/lib/pkgconfig/serial_motor_demo.pc'
+[1.881s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo/lib/python3.8/site-packages'
+[1.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'pythonpath')
+[1.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.ps1'
+[1.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.dsv'
+[1.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.sh'
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/ndp/datn/install/serial_motor_demo/bin'
+[1.882s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo)
+[1.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/package.ps1'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/package.dsv'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/package.sh'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/package.bash'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/ndp/datn/install/serial_motor_demo/share/serial_motor_demo/package.zsh'
+[1.884s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ndp/datn/install/serial_motor_demo/share/colcon-core/packages/serial_motor_demo)
+[1.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.884s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.889s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.889s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.889s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.901s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.902s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ndp/datn/install/local_setup.ps1'
+[1.902s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ndp/datn/install/_local_setup_util_ps1.py'
+[1.903s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ndp/datn/install/setup.ps1'
+[1.905s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ndp/datn/install/local_setup.sh'
+[1.905s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ndp/datn/install/_local_setup_util_sh.py'
+[1.905s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ndp/datn/install/setup.sh'
+[1.906s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ndp/datn/install/local_setup.bash'
+[1.906s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ndp/datn/install/setup.bash'
+[1.907s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ndp/datn/install/local_setup.zsh'
+[1.908s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ndp/datn/install/setup.zsh'
