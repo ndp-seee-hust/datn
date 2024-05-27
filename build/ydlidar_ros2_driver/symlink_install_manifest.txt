@@ -3,6 +3,7 @@
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/4ros_ydlidar_launch.py
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch.cpython-36.pyc
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch_view.cpython-36.pyc
+/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/test.py
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/test_gmapping_launch.py
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/view_ydlidar_launch.py
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/x3.py
@@ -11,6 +12,7 @@
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_4ros_view_launch.py
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_raw_launch.py
+/home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/mapper_params_online_async.yaml
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar_4ros.yaml
 /home/ndp/datn/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar_x3.yaml

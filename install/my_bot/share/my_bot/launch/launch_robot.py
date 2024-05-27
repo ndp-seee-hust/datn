@@ -1,0 +1,1 @@
+/home/ndp/datn/my_bot/launch/launch_robot.py

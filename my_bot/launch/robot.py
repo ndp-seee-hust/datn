@@ -26,6 +26,6 @@ def generate_launch_description():
 
         lidar,
         slam,
-        gmapping,
+        #gmapping,
 		robot
     ])

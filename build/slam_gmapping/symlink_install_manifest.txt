@@ -4,8 +4,11 @@
 /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/gmapping_x3_launch.py
 /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/slam_4ros_gmapping.launch.py
 /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/test_gmapping.launch.py
+/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/test_slam.py
 /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/x3_slam.py
 /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/launch/ydlidar_slam.py
+/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/params/mapper_params_offline.yaml
+/home/ndp/datn/install/slam_gmapping/share/slam_gmapping/params/mapper_params_online_async.yaml
 /home/ndp/datn/install/slam_gmapping/share/slam_gmapping/params/slam_gmapping.yaml
 /home/ndp/datn/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
 /home/ndp/datn/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping

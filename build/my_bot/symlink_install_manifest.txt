@@ -1,10 +1,12 @@
 /home/ndp/datn/install/my_bot/share/my_bot/config/empty.yaml
 /home/ndp/datn/install/my_bot/share/my_bot/config/my_bot.rviz
+/home/ndp/datn/install/my_bot/share/my_bot/config/my_controllers.yaml
 /home/ndp/datn/install/my_bot/share/my_bot/description/inertial_macros.xacro
 /home/ndp/datn/install/my_bot/share/my_bot/description/lidar.xacro
 /home/ndp/datn/install/my_bot/share/my_bot/description/robot.urdf.xacro
 /home/ndp/datn/install/my_bot/share/my_bot/description/robot_core.xacro
 /home/ndp/datn/install/my_bot/share/my_bot/description/ros2_control.xacro
+/home/ndp/datn/install/my_bot/share/my_bot/launch/launch_robot.py
 /home/ndp/datn/install/my_bot/share/my_bot/launch/robot.py
 /home/ndp/datn/install/my_bot/share/my_bot/launch/rsp.launch.py
 /home/ndp/datn/install/my_bot/share/my_bot/worlds/empty.world

@@ -19,6 +19,7 @@ def generate_launch_description():
 	return LaunchDescription([
 
         lidar,
-        slam,
-        gmapping
+        gmapping,
+        slam
+        
     ])
